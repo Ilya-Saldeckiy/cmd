@@ -1575,8 +1575,8 @@ img{
     .header-section {
         background: url('../img/header_bg_mob.jpg') 50% 100% no-repeat;
         background-color: #f7fafd;
-        padding-bottom: 334px;
-        background-size: contain;
+        padding-bottom: 634px;
+        background-size: auto;
     }
 
     .logo {
