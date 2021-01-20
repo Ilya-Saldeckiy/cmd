@@ -107,11 +107,11 @@ img{
     transition: color 0.3s ease-in-out;
 }
 
-.phone-link a:hover{
+/* .phone-link a:hover{
     color: #000000;
     transition: color 0.3s ease-in-out;
     font-weight: bold;
-}
+} */
 
 .list-position-phone{
     margin-right: 223px;
