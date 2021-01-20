@@ -2,9 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
+    <meta name="keywords" content="анализы, медицинские исследования">
+    <meta name="description" content="Анализы в Москве, Подмосковье, в городах России"> 
+    <title>CMD Центр Молекулярной Диагностики. Медицинская лаборатория 8 (800) 707 788 1 </title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="font/manrope-regular.ttf" as="font">
@@ -18,11 +22,11 @@
         <header class="container">
             <div class="header-container">
                 <h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
-                <img src="img/logo.svg" alt="Логотип" class="logo">
+                <a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg" alt="Логотип"></a>
                 <nav>
-                    <ul class="list-reset menu-list">
-                        <li class="menu-list-item"><a href="#">Узнать свою скидку</a></li>
-                        <li class="menu-list-item list-position-phone"><a href="#">Оформить карту PREMIUM</a></li>
+                    <ul class="list-reset menu-list anchor">
+                        <li class="menu-list-item"><a href="#sale-section">Узнать свою скидку</a></li>
+                        <li class="menu-list-item list-position-phone"><a href="#premium-section">Оформить карту PREMIUM</a></li>
                         <li class="phone-link"><a href="tel:+7(800)7077881">8 800 707 7881</a></li>
                     </ul>
                 </nav>
@@ -56,13 +60,13 @@
                     </div>
                 </div>
             </section>
-            <section class="sale-section">
+            <section id="sale-section" class="sale-section">
                 <div class="text-container sale-text">
                     <h3 class="main-caption">Скидки по дисконтной карте</h3>
                     <p class="text">Программа предусматривает предоставление скидки в зависимости от накопленной суммы заказов, сделанных с использованием Вашей карты. Сами накопления потратить невозможно.</p>
-                    <p class="text">При увеличении размера скидки Вам придет SMS-уведомление. Увеличенный размер скидки начинает действовать со следующей покупки.
-                    Скидка не распространяется на взятие биоматериала и услуги по определению родства.
-                    Скидка по виртуальной дисконтной карте суммируется с другими скидками и акциями, если это предусмотрено условиями их предоставления.</p>
+                    <p class="text text-corect">При увеличении размера скидки Вам придет SMS-уведомление. Увеличенный размер скидки начинает действовать со следующей покупки.</p>
+                    <p class="text">Скидка не распространяется на взятие биоматериала и услуги по определению родства.</p>
+                    <p class="text">Скидка по виртуальной дисконтной карте суммируется с другими скидками и акциями, если это предусмотрено условиями их предоставления.</p>
                 </div>
                 <div class="sale-container sale-card-position">
                     <div class="sale-card">
@@ -83,14 +87,14 @@
                     </div>
                 </div>
                 <div class="text-container sale-btn-position">
-                    <button class="btn sale-btn" type="button">Узнать свою скидку</button>
+                    <button id="open-button" class="btn sale-btn" type="button">Узнать свою скидку</button>
                 </div>
             </section>
-            <section class="premium-section">
+            <section id="premium-section" class="premium-section">
                 <div class="text-container">
                     <h3 class="main-caption">Карта CMD PREMIUM</h3>
-                    <p class="text">По достижении суммы накоплений в размере 100 000 руб. виртуальная дисконтная карта подлежит замене на именную виртуальную дисконтную карту «CMD Premium» со скидкой 20%.<br><a class="link-text" href="#">Проверить процент Вашей скидки</a></p>
-                    <p class="text">Скидки для детей до 15 лет предоставляются по виртуальной карте родителя.</p>
+                    <p class="text">По достижении суммы накоплений в размере 100 000 руб. виртуальная дисконтная карта подлежит замене на именную виртуальную дисконтную карту «CMD Premium» со скидкой 20%.<br><a id="anchor" class="link-text" href="#sale-section">Проверить процент Вашей скидки</a></p>
+                    <p class="text text-corect">Скидки для детей до 15 лет предоставляются по виртуальной карте родителя.</p>
                     <p class="text">Дополнительно к основной карте можно получить виртуальные карты для членов семьи или друзей. В дополнение к трем виртуальным картам клиент, являющийся законным представителем лица или лиц, признанных в установленном порядке недееспособными, имеет право оформить дополнительные именные виртуальные карты с размером скидки 20% на всех опекаемых им лиц.</p>
                     <div id="btn" class="premium-btn-position active-prem">
                         <button class="btn premium-btn" type="button">Оформить карту PREMIUM</button>
@@ -98,8 +102,10 @@
                     </div>
                     </div>
                     <div class="decoration-card disable-card container card">
-                        <div class="premium-container">
-                        <h3 class="Premium-caption">Форма заявления на получение дисконтных карт «CMD PREMIUM»</h3>
+                    <div class="premium-container">
+                        <div class="position-caption-prem">
+                            <h3 class="Premium-caption">Форма заявления на получение дисконтных карт «CMD PREMIUM»</h3>
+                        </div>
                         <p class="prem-text">Приложение №5 к Регламенту взаимодействия участников Дисконтной программы «Ваш CMD» ФБУН ЦНИИ Эпидемиологии Роспотребнадзора</p>
                             <div class="first-step-premium active-prem">
                             <p class="prem-text">Шаг 1 из 3</p>
@@ -108,22 +114,22 @@
                             <div class="prem-outline"></div>
                             <div class="prem-outline"></div>
                             </div>
-                            <form action="">
-                                    <legend class="legend-form">Я, гр.</legend>
+                            <form action="" class="form-premium">
+                                    <p class="legend-form">Я, гр.</p>
                                         <input class="input-form" name="Фамилия" type="text" placeholder="Фамилия" required>
                                         <input class="input-form" name="Имя" type="text" placeholder="Имя" required>
                                         <input class="input-form last-in" name="Отчество" type="text" placeholder="Отчество" required>
                                     <div class="secons-line">
-                                    <span>
-                                        <legend class="legend-form">Дата рождения</legend>
+                                    <div>
+                                        <p class="legend-form">Дата рождения</p>
                                         <input class="input-form input-date" type="date" name="Дата рождения" required>
-                                    </span>
-                                    <span>
-                                        <legend class="legend-form">Номер телефона</legend>
-                                        <input class="input-form input-phone last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
-                                    </span>
                                     </div>
-                                    <legend class="legend-form">Адрес проживания</legend>
+                                    <div>
+                                        <p class="legend-form">Номер телефона</p>
+                                        <input class="input-form input-phone last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
+                                    </div>
+                                    </div>
+                                    <p class="legend-form">Адрес проживания</p>
                                         <input class="input-form input-adress last-in" type="text" name="Адрес проживания" required>
                                     <div class="position-form-btn">
                                         <button id="continue" class="btn premium-form-btn" type="submit">Продолжить</button> 
@@ -141,79 +147,79 @@
                                     <button id="addBtn" class="add-btn" type="button">Добавить пользователя</button>
                                 </div>
                                 <div class="add-person-block disable-card">
-                                    <form action="">
+                                    <form action="" class="form-premium">
                                         <div class="add-person-form">
-                                            <legend class="legend-form">Получатель 1</legend>
-                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия" required>
-                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя" required>
+                                            <p class="legend-form">Получатель 1</p>
+                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия">
+                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя">
                                             <input class="input-form add-person-input last-in" name="Отчество" type="text" placeholder="Отчество" required>
                                             <div class="secons-line">
-                                                <span class="radio-btn">
-                                                    <legend class="legend-form legend-radio">Пол</legend>
+                                                <div class="radio-btn">
+                                                    <p class="legend-form legend-radio">Пол</p>
                                                     <input type="radio" name="radio" id="menRadio1" value="1">
                                                     <label for="menRadio1">Мужчина</label>
                                                     <input type="radio" name="radio" id="womenRadio1" value="2">
                                                     <label for="womenRadio1">Женщина</label>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Дата рождения</legend>
-                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения" required>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Номер телефона</legend>
-                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
-                                                </span>
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Дата рождения</p>
+                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения">
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Номер телефона</p>
+                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="add-person-form">
-                                            <legend class="legend-form">Получатель 2</legend>
-                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия" required>
-                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя" required>
+                                            <p class="legend-form">Получатель 2</p>
+                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия">
+                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя">
                                             <input class="input-form add-person-input last-in" name="Отчество" type="text" placeholder="Отчество" required>
                                             <div class="secons-line">
-                                                <span class="radio-btn">
-                                                    <legend class="legend-form legend-radio">Пол</legend>
+                                                <div class="radio-btn">
+                                                    <p class="legend-form legend-radio">Пол</p>
                                                     <input type="radio" name="radio" id="menRadio2" value="1">
                                                     <label for="menRadio2">Мужчина</label>
                                                     <input type="radio" name="radio" id="womenRadio2" value="2">
                                                     <label for="womenRadio2">Женщина</label>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Дата рождения</legend>
-                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения" required>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Номер телефона</legend>
-                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
-                                                </span>
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Дата рождения</p>
+                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения">
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Номер телефона</p>
+                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="add-person-form last-person-form">
-                                            <legend class="legend-form">Получатель 3</legend>
-                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия" required>
-                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя" required>
+                                            <p class="legend-form">Получатель 3</p>
+                                            <input class="input-form add-person-input" name="Фамилия" type="text" placeholder="Фамилия">
+                                            <input class="input-form add-person-input" name="Имя" type="text" placeholder="Имя">
                                             <input class="input-form add-person-input last-in" name="Отчество" type="text" placeholder="Отчество" required>
                                             <div class="secons-line">
-                                                <span class="radio-btn">
-                                                    <legend class="legend-form legend-radio">Пол</legend>
+                                                <div class="radio-btn">
+                                                    <p class="legend-form legend-radio">Пол</p>
                                                     <input type="radio" name="radio" id="menRadio3" value="1">
                                                     <label for="menRadio3">Мужчина</label>
                                                     <input type="radio" name="radio" id="womenRadio3" value="2">
                                                     <label for="womenRadio3">Женщина</label>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Дата рождения</legend>
-                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения" required>
-                                                </span>
-                                                <span>
-                                                    <legend class="legend-form">Номер телефона</legend>
-                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
-                                                </span>
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Дата рождения</p>
+                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения">
+                                                </div>
+                                                <div>
+                                                    <p class="legend-form">Номер телефона</p>
+                                                    <input class="input-form input-phone add-person-input last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__">
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                                <div class="">
+                                <div class="position-btn-second-prem-step">
                                     <button id="btnBack" class="back-btn" type="button">Назад</button>
                                     <button id="btnContinui" class="btn continue-btn" type="submit">Продолжить</button>
                                 </div>
@@ -240,23 +246,27 @@
                 <div class="question-list list-reset" id="accordion">
                     <h3 class="question-link first-quest d">Как вступить в программу/получить виртуальную карту?</h3>
                     <div class="question-list-item">
-                        <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                        <p>Оформите первый договор-заказ в любом офисе CMD. Получите SMS с номером вашей карты автоматически. Если в течение 24-х часов вам не пришло SMS, позвоните в колл-центр.</p>
                     </div>
                     <h3 class="question-link d">Как использовать карту?</h3>
                     <div class="question-list-item">
-                        <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                        <p>При заказе услуг назовите администратору полученный в SMS номер карты, номер телефона, к которому привязана ваша карта, или ФИО владельца.</p>
                     </div>
                     <h3 class="question-link d">Как узнать сумму накоплений?</h3>
                     <div class="question-list-item">
-                        <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                        <ul>
+                            <li>В личном кабинете на сайте: <a class="link-text" target="_blank" href="www.cmd-online.ru">www.cmd-online.ru</a>;</li>
+                            <li>В течение 24 часов после оформления заказа вам приходит СМС с текущим балансом;</li>
+                            <li>Через оператора колл-центра или у администратора любого офиса CMD.</li>
+                        </ul>
                     </div>
                     <h3 class="question-link d">Я накопил 100 000 руб. Что дальше?</h3>
                     <div class="question-list-item">
-                        <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                        <p>Для получения скидки 20% и подключения дополнительных участников заполните заявление в любом офисе CMD или на <a class="link-text" target="_blank" href="https://www.cmd-online.ru/patsientam/">сайте.</a></p>
                     </div>
                     <h3 class="question-link d">Могу ли я оставить виртуальную неименную карту?</h3>
                     <div class="question-list-item">
-                        <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                        <p>Максимальный размер скидки по виртуальной неименной карте 15%. Заполните заявление у администратора офиса CMD и у вас останется неименная виртуальная дисконтная карта «Ваш CMD» со скидкой 15%.</p>
                     </div>
                 </div>
                 <script>
@@ -275,11 +285,11 @@
                 <div class="container footer-position">
                     <p class="footer-text">© 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
                     <ul class="list-reset footer-social-list">
-                        <li class="footer-social-list-item"><a href="#" class="social-1"></a></li>
-                        <li class="footer-social-list-item"><a href="#" class="social-2"></a></li>
-                        <li class="footer-social-list-item"><a href="#" class="social-3"></a></li>
-                        <li class="footer-social-list-item"><a href="#" class="social-4"></a></li>
-                        <li class="footer-social-list-item"><a href="#" class="social-5"></a></li>
+                        <li class="footer-social-list-item"><a href="https://www.facebook.com/cmd.online.social " class="social-1" target="_blank"></a></li>
+                        <li class="footer-social-list-item"><a href="https://vk.com/cmd.online " class="social-2" target="_blank" rel="nofollow"></a></li>
+                        <li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-3" target="_blank" rel="nofollow"></a></li>
+                        <li class="footer-social-list-item"><a href="https://ok.ru/cmdonline " class="social-4" target="_blank" rel="nofollow"></a></li>
+                        <li class="footer-social-list-item"><a href="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw " class="social-5" target="_blank" rel="nofollow"></a></li>
                     </ul>
                 </div>
             </section>
@@ -287,6 +297,95 @@
                 <p class="recomend-text">О возможных противопоказаниях необходимо проконсультироваться со специалистом</p>
             </section>
         </footer>
+        <div class="modal-overlay close" id="modal-overlay"></div>
+        <div class="modal" id="modal">
+        <button class="close-button" id="close-button"></button>
+        <div class="modal-guts">
+            <p class="caption-modal">Узнать свою скидку</p>
+            <div id="modalFirstStep" class="modal-first-step active-modal">
+                <p class="legend-form">Номер телефона</p>
+                <input class="input-form input-phone-modal last-in" name="Номер телефона" type="tel" placeholder="+7 (___) ___-__-__" required>
+                <button id="modalSubmit" class="btn modal-btn" type="submit">Отправить</button>
+            </div>
+            <div id="modalSecondStep" class="modal-second-step disable-modal">
+                <p class="modal-text">На ваш телефон +7(111) 222-33-44 отправлено сообщение с кодом. Для подтверждения Вашего телефонного номера введите код из SMS.</p>
+                <input class="input-form input-code-modal last-in" name="Код" type="text" required>
+                <button id="confirm" class="btn modal-btn" type="submit">Подтвердить</button>
+                <span class="modal-text-return">Повторно отправить SMS можно через 20 секунд</span>
+            </div>
+            <div id="modalThreeStep" class="modal-three-step disable-modal">
+                <p class="legend-form">Номер дисконтной карты</p>
+                <select class="select-modal" name="select" id="selectCustom">
+                    <option value="1">3000348872 - 0%</option>
+                    <option value="1">3000348872 - 5%</option>
+                    <option value="1">3000348872 - 10%</option>
+                    <option value="1">3000348872 - 15%</option>
+                    <option value="1">3000348872 - 20%</option>
+                </select>
+                <div class="my-sale-text-position">
+                    <span class="my-sale-text-green">Ваша скидка-<span>15%</span></span>
+                    <span class="my-sale-text">До скидки <b>20%</b> осталось 46 272 р.</span>
+                </div>
+                <div class="mobile-position-progress">
+                    <div class="position-progress-bar">
+                        <div class="circle-sale-activ circle-1"></div>
+                        <div class="circle-sale-activ circle-2"></div>
+                        <div class="circle-sale-activ circle-3"></div>
+                        <div class="circle-sale-activ circle-line-disable circle-4 activ-percent"></div>
+                        <div class="circle-sale-activ circle-line-off circle-disable circle-5 "></div>
+                    </div>
+                    <div class="position-price">
+                        <span class="modal-price">5 000 р.</span>
+                        <span class="modal-price">10 000 р.</span>
+                        <span class="modal-price">30 000 р.</span>
+                        <span class="modal-price">100 000 р.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<script>
+    var modal = document.querySelector("#modal"),
+    modalOverlay = document.querySelector("#modal-overlay"),
+    closeButton = document.querySelector("#close-button"),
+    openButton = document.querySelector("#open-button"),
+    modalFirstStep = document.querySelector("#modalFirstStep"),
+    modalSecondStep = document.querySelector("#modalSecondStep"),
+    modalThreeStep = document.querySelector("#modalThreeStep"),
+    confirm = document.querySelector("#confirm"),
+    modalSubmit = document.querySelector("#modalSubmit");
+
+
+    closeButton.addEventListener("click", function() {
+        modal.classList.toggle("closed");
+        modalOverlay.classList.toggle("close");
+    });
+
+    openButton.addEventListener("click", function() {
+        modal.classList.toggle("closed");
+        modalOverlay.classList.toggle("close");
+    });
+
+    modalSubmit.addEventListener("click", function(){
+        modalFirstStep.classList.remove("active-modal");
+        modalFirstStep.classList.add("disable-modal");
+        modalSecondStep.classList.remove("disable-modal")
+        modalSecondStep.classList.add("active-modal")
+    });
+
+    confirm.addEventListener("click", function(){
+        modalSecondStep.classList.remove("active-modal")
+        modalSecondStep.classList.add("disable-modal")
+        modalThreeStep.classList.remove("disable-modal")
+        modalThreeStep.classList.add("active-modal")
+    })
+</script>
+
+
+        <script src="js/choices.min.js"></script>
+        <script src="js/select.js"></script>
+        <script src="js/pop-up.js"></script>
+        <script src="js/animate.js"></script>
         <script src="js/accordion.js"></script>
         <script src="js/premium-card.js"></script>
 </body>
