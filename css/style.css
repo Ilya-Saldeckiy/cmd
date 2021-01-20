@@ -77,7 +77,7 @@ img{
 .header-section{
     padding-top: 32px;
     background: url('../img/header_bg.jpg') 50% 0% no-repeat;
-    background-color: #f7fafd;
+    background-color: #f7f9fc;
     padding-bottom: 254px;
     margin-bottom: 106px;
 }
@@ -102,9 +102,15 @@ img{
     margin-right: 81px;
 }
 
-.menu-list-item a:hover,.phone-link a:hover{
+.menu-list-item a:hover{
     color: #000000;
     transition: color 0.3s ease-in-out;
+}
+
+.phone-link a:hover{
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
 }
 
 .list-position-phone{
