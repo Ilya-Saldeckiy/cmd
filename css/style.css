@@ -518,11 +518,35 @@ img{
 
 
 .add-person-block{
+    position: relative;
     text-align: left;
+}
+
+.person-form-1,.person-form-2,.person-form-3{
+    position: relative;
+    border-top: 1px solid #e2e2e2;
+}
+
+.person-form-3,.person-form-2{
+    border-top: 1px solid #e2e2e2;
 }
 
 .add-person-input{
     width: 272px;
+}
+
+.remove-person-btn{
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url('../img/ico_x.svg') no-repeat;
+    background-color: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    right: 0;
 }
 
 .legend-form input[type=radio] {
@@ -577,12 +601,11 @@ img{
 .add-person-form{
     padding-top: 37px;
     padding-bottom: 47px;
-    border-bottom: 1px solid #e2e2e2;
 }
 
-.last-person-form{
+/* .last-person-form{
     border: none;
-}
+} */
 
 .premium-text{
     font-size: 16px;
