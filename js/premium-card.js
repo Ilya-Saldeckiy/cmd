@@ -37,5 +37,17 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.second-step-premium').classList.toggle('disable-card') && document.querySelector('.second-step-premium').classList.remove('active-prem')
     })
 
+    document.querySelector('#firstPerson').addEventListener('click', function () {
+        document.querySelector('.person-form-1').classList.toggle('disable-btn') && document.querySelector('.person-form-1').classList.remove('activ-btn')
+    })
 
+    document.querySelector('#secondPerson').addEventListener('click', function () {
+        document.querySelector('.person-form-2').classList.toggle('disable-btn') && document.querySelector('.person-form-2').classList.remove('activ-btn')
+    })
+
+    document.querySelector('#threePerson').addEventListener('click', function () {
+        document.querySelector('.person-form-3').classList.toggle('disable-btn') && document.querySelector('.person-form-3').classList.remove('activ-btn')
+    })
+
+    
 })
