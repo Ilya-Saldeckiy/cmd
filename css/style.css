@@ -1477,6 +1477,8 @@ img{
     .ui-accordion-header{
         font-size: 18px;
         line-height: 24px;
+        padding-top: 27px;
+        padding-bottom: 26px;
     }
 
     .footer-social-list {
