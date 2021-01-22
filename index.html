@@ -131,7 +131,7 @@
                                     <div class="secons-line">
                                     <div>
                                         <p class="legend-form legend-form-position">Дата рождения</p>
-                                        <input class="input-form input-date" type="date" name="Дата рождения" required>
+                                        <input class="input-form input-date" type="text" placeholder="ДД.ММ.ГГГГ" name="Дата рождения" required>
                                     </div>
                                     <div>
                                         <p class="legend-form legend-form-position">Номер телефона</p>
@@ -221,7 +221,7 @@
                                                 </div>
                                                 <div>
                                                     <p class="legend-form">Дата рождения</p>
-                                                    <input class="input-form input-date add-person-input" type="date" name="Дата рождения">
+                                                    <input id="date" class="input-form input-date add-person-input" type="text" name="Дата рождения">
                                                 </div>
                                                 <div>
                                                     <p class="legend-form">Номер телефона</p>
@@ -377,17 +377,20 @@
     modalSecondStep = document.querySelector("#modalSecondStep"),
     modalThreeStep = document.querySelector("#modalThreeStep"),
     confirm = document.querySelector("#confirm"),
+    body = document.querySelector("body"),
     modalSubmit = document.querySelector("#modalSubmit");
 
 
     closeButton.addEventListener("click", function() {
         modal.classList.toggle("closed");
         modalOverlay.classList.toggle("close");
+        body.classList.remove("fix");
     });
 
     openButton.addEventListener("click", function() {
         modal.classList.toggle("closed");
         modalOverlay.classList.toggle("close");
+        body.classList.add("fix");
     });
 
     modalSubmit.addEventListener("click", function(){

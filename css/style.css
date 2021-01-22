@@ -959,6 +959,16 @@ img{
     margin-bottom: 50px;
 }
 
+.fix{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.input-date{
+    background: url('../img/ico_calendar.svg') 97% 50% no-repeat;
+}
+
 
 .active-modal{
     display: block;
