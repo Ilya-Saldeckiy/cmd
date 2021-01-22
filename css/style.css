@@ -242,6 +242,13 @@ img{
     margin-bottom: 61px;
 }
 
+.sale-card-number{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
 .sale-card-text{
     text-align: center;
 }
@@ -305,8 +312,8 @@ img{
     color: #333333;
     border-radius: 0px;
     border: none ;
-    border-top: 1px solid #CACACA;
-    border-bottom: 1px solid #CACACA;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
     outline: none;
 }
 
@@ -315,12 +322,12 @@ img{
     color: #333333 ;
     border-radius: 0px;
     border: none ;
-    border-top: 1px solid #CACACA;
+    border-top: 1px solid #eeeeee;
     outline: none;
 }
 
 .question-link:nth-of-type(5n){
-    border-bottom: 1px solid#CACACA;
+    border-bottom: 1px solid#eeeeee;
 }
 
 .ui-icon{
@@ -332,6 +339,12 @@ img{
     font-weight: 400;
     min-height: 100%;
     overflow: hidden;
+    margin-top: -30px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
 }
 
 .ui-accordion-header{
@@ -345,36 +358,40 @@ img{
     cursor: pointer;
     padding-top: 41px;
     padding-left: 16px;
-    padding-right: 17px;
+    padding-right: 48px;
 }
 
-.d::after{
-    content: " ";
-    float: right;
-    width: 23px; 
-    height: 23px;
-    float: right;
-    border-radius: 50%;
-    cursor: pointer;
+.ui-accordion-icons{
     background-image: url("../img/plus.svg");
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 98% 50%;
+    display: block;
+    margin-right: 24px;
+    background-size: 24px;
 }
 
-.d-active::after{
-    content: " ";
-    background-image: url('../img/minus.svg');
+.ui-accordion-icons-active{
+    background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 98% 50%;
+    display: block;
+    margin-right: 24px;
+    background-size: 24px;
 }
-
 
 
 .decoration-card{
     padding-top: 51px;
     padding-bottom: 48px;
     border: 1px solid #dadada;
+    margin-top: 90px;
+}
+
+.prem-step{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
 }
 
 .Premium-caption{
@@ -397,7 +414,7 @@ img{
 
 .premium-container{
     margin: 0 auto;
-    max-width: 870px;
+    max-width: 880px;
 }
 
 .prem-outline{
@@ -405,7 +422,11 @@ img{
     height: 2px;
     background-color: #cce0e6;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
+}
+
+.legend-form-position{
+    margin-bottom: 4px !important;
 }
 
 .prem-outline-position{
@@ -417,11 +438,11 @@ img{
 }
 
 .legend-form{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .input-form{
@@ -429,9 +450,10 @@ img{
     height: 48px;
     border: 1px solid #bbbbbb;
     margin-bottom: 40px;
-    margin-right: 22px;
+    margin-right: 28px;
     padding-right: 20px;
     padding-left: 16px;
+    outline: none;
 }
 
 .input-form::placeholder{
@@ -450,6 +472,10 @@ img{
 .input-date{
     width: 424px;
     color:#999999;
+}
+
+.input-date:focus{
+    color: #000000;
 }
 
 .input-phone{
@@ -493,9 +519,17 @@ img{
     border: none;
     outline: none;
     background-color: unset;
-    color: #88d7f1;
+    color: #00a9e0;
     cursor: pointer;
     margin-bottom: 35px;
+}
+
+.add-btn:hover{
+    text-decoration: underline;
+}
+
+.step-2-text{
+    margin-bottom: 37px;
 }
 
 .back-btn{
@@ -506,6 +540,13 @@ img{
     color:  #00a9e0;
     background-color: unset;
     margin-right: 330px;
+    cursor: pointer;
+}
+
+.back-btn:hover{
+    background-color: #00a9e0;
+    color: #ffffff;
+    transition: .5s;
 }
 
 .continue-btn{
@@ -522,9 +563,19 @@ img{
     text-align: left;
 }
 
-.person-form-1,.person-form-2,.person-form-3{
+.person-form-2,.person-form-3{
     position: relative;
     border-top: 1px solid #e2e2e2;
+}
+
+.person-form-1{
+    position: relative;
+}
+
+.radio-btn input{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .person-form-3,.person-form-2{
@@ -602,10 +653,6 @@ img{
     padding-top: 37px;
     padding-bottom: 47px;
 }
-
-/* .last-person-form{
-    border: none;
-} */
 
 .premium-text{
     font-size: 16px;
@@ -686,11 +733,12 @@ img{
     height: 25px;
     position: absolute;
     z-index: 1;
-    top: 25px;
+    top: 35px;
     right: 20px;
     border: 0;
     background: url('../img/ico_x.svg') no-repeat;
     outline: none;
+    cursor: pointer;
 }
 
 .caption-modal{
@@ -700,6 +748,7 @@ img{
     border-bottom: 1px solid #dadada;
     padding-bottom: 18px;
     margin-top: 0;
+    margin-bottom: 35px;
 }
 
 .input-phone-modal{
@@ -768,7 +817,7 @@ img{
     line-height: 24px;
     font-weight: 700;
     color: #00b388;
-    margin-right: 160px;
+    margin-right: 174px;
 }
 
 .my-sale-text{
@@ -1095,6 +1144,8 @@ img{
         font-weight: 600;
         text-transform: uppercase;
         color: #999999;
+        position: absolute;
+        right: 0;
     }
 
     .header-caption{
@@ -1177,13 +1228,25 @@ img{
 
 @media (max-width: 767px){
     .container,.text-container,.sale-container{
-        padding-left: 20px;
-        padding-right: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
         width: 100%;
     }
 
     .header-section{
         padding-bottom: 138px;
+    }
+
+    .sale-card-mobile-5{
+        margin-right: 30px;
+    }
+
+    .sale-card-mobile-10{
+        margin-right: 10px;
+    }
+
+    .sale-card-mobile-15{
+        margin-right: 10px;
     }
 
     .logo{
@@ -1211,25 +1274,38 @@ img{
 
     .header-caption-position{
         text-align: center;
+        margin: 0 auto;
     }
 
     .header-subtitle{
         font-size: 18px;
         line-height: 24px;
-        margin-left: 214px;
+        /* margin-left: 214px; */
+        margin: 0 auto;
+
+    }
+
+    .advantages-card:nth-child(2n) {
+        margin: 0 auto;
+    }
+
+    .advantages-card:not(:last-child){
+        margin: 0 auto;
     }
 
     .header-section{
-        background: url('../img/header_bg_mob.jpg') 50% 130% no-repeat;
+        background: url('../img/header_bg_mob.jpg') 50% 100% no-repeat;
         background-color: #f7fafd;
-        padding-bottom: 596px;
-        background-size: contain;
+        padding-bottom: 98%;
+        background-size: 100% auto;
+        margin-bottom: 63px;
     }
 
     .main-caption{
         font-size: 22px;
         line-height: 32px;
         text-align: left;
+        margin-top: 0;
     }
 
     .text{
@@ -1240,33 +1316,106 @@ img{
     .advantages-card-position{
         display: block;
         text-align: center;
-        padding-left: 264px;
+        margin: 0 auto;
     }
 
     .advantages-card{
         margin-right: 0px;
+        margin: 0 auto;
+    }
+
+    .back-btn{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .continue-btn{
+        display: block;
+        margin: 0 auto;
     }
 
     .advantages-card:not(:last-child){
         margin-bottom: 54px;
     }
 
+    .advantages-caption{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .Advantages-section{
+        padding-bottom: 51px;
+    }
+
+    .sale-section{
+        padding-top: 61px;
+        padding-bottom: 56px;
+    }
+    
+    .phone-link a{
+        position: absolute;
+        top: 4px;
+        right: 10px;
+    }
+    
+    .premium-section{
+        padding-top: 61px;
+        padding-bottom: 56px;
+    }
+
+    .prem-text{
+        text-align: left;
+    }
+
+    .Premium-caption{
+        text-align: left;
+    }
+
+    .prem-step{
+        text-align: center;
+    }
+
     .sale-card {
         margin-right: 0px;
         padding-top: 1px;
+        padding-left: 25px;
+        background: url('../img/discount_bg.svg') 0% 0% no-repeat;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        width: 291px;
+    }
+
+    .advantages-card-text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
     }
     
     .sale-percent{
         margin-bottom: 44px;
+        margin-right: 32px;
+    }
+
+    .sale-card-text{
+        text-align: left;
     }
 
     .sale-card:not(:last-child){
-        margin-bottom: 54px;
+        margin:  0 auto;
+        margin-bottom: 34px;
+    }
+
+    .sale-btn-position{
+        margin-top: 40px;
     }
 
     .sale-card-position {
         display: block;
-        padding-left: 316px;
+        margin: 0 auto;
     }
 
     .ui-accordion-header{
@@ -1298,106 +1447,13 @@ img{
         width: 100%;
     }
 
-}
-
-@media (max-width: 735px){
-    .header-subtitle{
-        margin-left: 194px;
-    }
-
-    .advantages-card-position{
-        padding-left: 246px;
-    }
-
-    .sale-card-position {
-        padding-left: 296px;
-    }
-
     .footer-social-list {
-        left: 206px;
+        left: 0px;
+        margin: 0 auto;
     }
 
     .recomend-text{
         font-size: 10px;
-    }
-
-    .back-btn{
-        margin-right: 0px;
-        margin-bottom: 30px;
-        display: block;
-    }
-
-    .continue-btn{
-        display: block;
-    }
-
-    .position-btn-second-prem-step{
-       padding-left: 212px;
-    }
-}
-
-@media (max-width: 700px){
-    .header-subtitle{
-        margin-left: 176px;
-    }
-
-    .advantages-card-position{
-        padding-left: 216px;
-    }
-
-    .sale-card-position {
-        padding-left: 296px;
-    }
-
-    .footer-social-list {
-        left: 206px;
-    }
-
-    .back-btn{
-        margin-right: 0px;
-        display: block;
-    }
-
-    .continue-btn{
-        display: block;
-    }
-
-    .position-btn-second-prem-step{
-       padding-left: 201px;
-    }
-}
-
-@media (max-width: 650px){
-
-    .header-section {
-        background: url('../img/header_bg_mob.jpg') 50% 95% no-repeat;
-        background-color: #f7fafd;
-        padding-bottom: 596px;
-        background-size: contain;
-    }
-
-    .header-subtitle{
-        margin-left: 156px;
-    }
-
-    .advantages-card-position{
-        padding-left: 196px;
-    }
-
-    .sale-card-position {
-        padding-left: 256px;
-    }
-
-    .footer-social-list {
-        left: 164px;
-    }
-
-    .position-btn-second-prem-step{
-        padding-left: 180px;
-     }
-
-     .modal{
-        width: 291px;
     }
 
     .modal-guts{
@@ -1447,6 +1503,7 @@ img{
     }
 
     .modal{
+        width: 90%;
         top: 50%;
     }
 
@@ -1561,103 +1618,12 @@ img{
     .my-sale-text-position {
         margin-bottom: 32px;
     }
+
 }
 
-@media (max-width: 620px){
 
-    .header-section {
-        background: url('../img/header_bg_mob.jpg') 50% 95% no-repeat;
-        background-color: #f7fafd;
-        padding-bottom: 596px;
-        background-size: contain;
-    }
-
-    .header-subtitle{
-        margin-left: 136px;
-    }
-
-    .advantages-card-position{
-        padding-left: 176px;
-    }
-
-    .sale-card-position {
-        padding-left: 234px;
-    }
-
-    .footer-social-list {
-        left: 151px;
-    }
-
-    .position-btn-second-prem-step{
-        padding-left: 167px;
-     }
-}
-
-@media (max-width: 600px){
-
-    .container,.text-container,.sale-container{
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 291px;
-    }
-
-    .header-section {
-        background: url('../img/header_bg_mob.jpg') 50% 100% no-repeat;
-        background-color: #f7fafd;
-        padding-bottom: 272px;
-        background-size: 300px;
-    }
-
-    .logo {
-        margin-right: 36px;
-    }
-
-    .header-subtitle{
-        margin-left: -5px;
-    }
-
-    .advantages-card-position{
-        padding-left: 16px;
-    }
-
-    .sale-card-position {
-        padding-left: 74px;
-    }
-
-    .footer-social-list {
-        left: 10px;
-        bottom: 60px;
-    }
-
+@media(max-width: 370px){
     .sale-btn, .premium-btn{
-        width: 288px;
-    }
-
-    .description-premium{
-        font-size: 13px;
-    }
-
-    .advantages-caption{
-        font-size: 20px;
-        line-height: 32px;
-    }
-
-    .position-btn-second-prem-step{
-        padding-left: 12px;
-    }
-
-    .push-btn{
         width: 90%;
     }
-
-    .ui-accordion-header {
-        padding-left: 5px;
-        padding-right: 0px;
-    }
-
-    .recomend-text{
-        font-size: 7px;
-    }
-
-    
 }
