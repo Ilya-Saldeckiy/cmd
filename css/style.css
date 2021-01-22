@@ -245,7 +245,14 @@ img{
 .sale-card-number{
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 600;
+    color: #000000;
+}
+
+.sale-card-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     color: #000000;
 }
 
@@ -1074,6 +1081,10 @@ img{
         width: 968px;
     }
 
+    .header-section{
+        padding-top: 24px;
+    }
+
     .logo{
         margin-right: 103px;
         margin-bottom: 163px;
@@ -1247,6 +1258,14 @@ img{
         padding-bottom: 138px;
     }
 
+    .header-caption{
+        margin-bottom: 0px;
+    }
+
+    .advantages-card-text{
+        font-size: 18px;
+    }
+
     .sale-card-mobile-5{
         margin-right: 30px;
     }
@@ -1293,6 +1312,10 @@ img{
         /* margin-left: 214px; */
         margin: 0 auto;
 
+    }
+
+    .position-advantages-caption{
+        margin-bottom: 52px;
     }
 
     .advantages-card:nth-child(2n) {
@@ -1350,7 +1373,7 @@ img{
     }
 
     .advantages-caption{
-        font-size: 20px;
+        font-size: 22px;
         line-height: 32px;
         font-weight: 700;
         color: #000000;
@@ -1372,7 +1395,7 @@ img{
     }
     
     .premium-section{
-        padding-top: 61px;
+        padding-top: 62px;
         padding-bottom: 56px;
     }
 
@@ -1408,6 +1431,8 @@ img{
     .sale-percent{
         margin-bottom: 44px;
         margin-right: 32px;
+        position: relative;
+        top: 8px;
     }
 
     .sale-card-text{
@@ -1628,6 +1653,12 @@ img{
     .my-sale-text-position {
         margin-bottom: 32px;
     }
+
+    .qestion-section{
+        padding-top: 62px;
+        padding-bottom: 56px;
+    }
+    
 
 }
 
