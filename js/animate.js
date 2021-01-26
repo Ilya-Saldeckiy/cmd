@@ -5,4 +5,9 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+    $(".animate-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".decoration-card").offset().top 
+        }, 500);
+    });
 });
