@@ -238,7 +238,7 @@ img{
     font-weight: 600;
     color: #f8485e;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 36px;
     margin-bottom: 61px;
 }
 
@@ -355,12 +355,14 @@ img{
     font-weight: 400;
     min-height: 100%;
     overflow: hidden;
-    margin-top: -32px;
+    margin-top: 0px;
     padding-left: 16px;
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
     color: #000000;
+    padding-bottom: 17px;
+    padding-right: 40px;
 }
 
 .ui-accordion-header{
@@ -375,13 +377,13 @@ img{
     padding-top: 48px;
     padding-bottom: 41px;
     padding-left: 16px;
-    padding-right: 48px;
+    padding-right: 40px;
 }
 
 .ui-accordion-icons{
     background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
-    background-position: 98% 50%;
+    background-position: 98.5% 50%;
     display: block;
     margin-right: 24px;
     background-size: 24px;
@@ -678,7 +680,7 @@ img{
 }
 
 .legend-radio{
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .add-person-form{
@@ -734,10 +736,16 @@ img{
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: #ffffff;
     padding-top: 41px;
     padding-bottom: 39px;
 
+}
+
+.modal-text-return-mobile{
+    margin-top: 15px;
+    margin-bottom: 21px;
+    display: none;
 }
 
 .closed,.open {
@@ -763,6 +771,7 @@ img{
     margin: 0 auto;
     overflow: none;
     outline: none;
+    padding-left: 0;
 }
 
 .modal .close-button {
@@ -782,10 +791,11 @@ img{
     font-size: 20px;
     font-weight: 700;
     color: #000000;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 1px solid #eeeeee;
     padding-bottom: 18px;
+    padding-left: 40px;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .input-phone-modal{
@@ -816,6 +826,10 @@ img{
     line-height: 20px;
     font-weight: 400;
     color: #888888;
+}
+
+.modal-second-step,.modal-first-step{
+    overflow-y: auto;
 }
 
 .input-code-modal{
@@ -914,7 +928,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
-    left: 3px;
+    left: -3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -928,7 +942,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
-    left: 3px;
+    left: -3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -942,7 +956,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
-    left: 3px;
+    left: -3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -956,7 +970,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
-    left: 3px;
+    left: -4px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -969,7 +983,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
-    left: 3px;
+    left: -7px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -1025,6 +1039,10 @@ img{
     display: none;
 }
 
+.ui-accordion-header-active{
+    border-bottom: none;
+    padding-bottom: 8px;
+}
 
 
 
@@ -1111,8 +1129,12 @@ img{
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 30px;
+    background: url('../img/preduprezhdenie.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     background-color:rgba(248, 248, 248, 0.96);
-    text-align: center;
 }
 
 /* Адаптив */
@@ -1275,8 +1297,8 @@ img{
     }
 
     .form-premium,.prem-text-step,.premium-text{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .back-btn{
@@ -1289,6 +1311,22 @@ img{
 
     .add-person-input,.input-form{
         width: 100%;
+    }
+
+    .footer-recomend{
+        height: 15px;
+        background: url('../img/preduprezhdenie.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-color:rgba(248, 248, 248, 0.96);
+    }
+
+    .modal-text-return-mobile{
+        display: block;
+    }
+
+    .modal-text-return-des{
+        display: none;
     }
 
 }
@@ -1313,7 +1351,7 @@ img{
     }
 
     .sale-card-mobile-5{
-        margin-right: 30px;
+        margin-right: 24px;
     }
 
     .sale-card-mobile-10{
@@ -1322,6 +1360,18 @@ img{
 
     .sale-card-mobile-15{
         margin-right: 10px;
+    }
+
+    .input-form{
+        margin-bottom: 8px;
+    }
+
+    .legend-form-position{
+        margin-top: 37px;
+    }
+
+    .premium-form-btn{
+        margin-top: 40px;
     }
 
     .logo{
@@ -1340,6 +1390,10 @@ img{
         font-weight: 400;
         text-transform: uppercase;
         color: #777777;
+    }
+
+    .decoration-card{
+        padding-top: 26px;
     }
 
     .header-caption{
@@ -1476,10 +1530,13 @@ img{
     }
     
     .sale-percent{
+        font-size: 30px;
+        font-weight: 600;
         margin-bottom: 44px;
-        margin-right: 32px;
+        margin-right: 48px;
         position: relative;
-        top: 8px;
+        top: 0px;
+        left: 8px;
     }
 
     .sale-card-text{
@@ -1501,7 +1558,7 @@ img{
     }
 
     .ui-accordion-header{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
         padding-top: 27px;
         padding-bottom: 26px;
@@ -1510,6 +1567,10 @@ img{
     .footer-social-list {
         left: 216px;
         width: 300px;
+    }
+
+    .ui-widget-content{
+        font-size: 16;
     }
 
     .recomend-text{
@@ -1525,6 +1586,7 @@ img{
         margin-left: 0;
         font-size: 22px;
         line-height: 32px;
+        padding-top: 24px;
     }
 
     .premium-form-btn{
@@ -1581,14 +1643,24 @@ img{
     }
 
     .modal-three-step {
-        overflow-x: auto;
-        height: 400px;
+        overflow-y: auto;
+        height: 100%;
     }
 
     .modal{
         width: 100%;
         height: 100%;
         top: 50%;
+        padding-top: 16px
+    }
+
+    .caption-modal{
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+
+    .modal .close-button{
+        top: 20px;
     }
 
     .circle-sale-activ::after {
@@ -1718,6 +1790,10 @@ img{
 
     .prem-outline{
         width: 80px;
+    }
+
+    .push-btn{
+        width: 288px;
     }
     
 

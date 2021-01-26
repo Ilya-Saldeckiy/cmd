@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
     $(".animate-btn").click(function() {
         $('html, body').animate({
-            scrollTop: $(".decoration-card").offset().top 
-        }, 500);
+            scrollTop: $(".premium-container").offset().top 
+        }, 1000);
     });
 });
