@@ -123,7 +123,7 @@ img{
     font-weight: 700;
     color: #003594;
     font-weight: 700;
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 36px;
 }
 
@@ -355,7 +355,7 @@ img{
     font-weight: 400;
     min-height: 100%;
     overflow: hidden;
-    margin-top: -30px;
+    margin-top: -32px;
     padding-left: 16px;
     font-size: 18px;
     line-height: 32px;
@@ -396,19 +396,16 @@ img{
     background-size: 24px;
 }
 
+.last-accord {
+    border-bottom: 1px solid #eeeeee;
+}
+
 
 .decoration-card{
     padding-top: 51px;
     padding-bottom: 48px;
     border: 1px solid #dadada;
     margin-top: 90px;
-}
-
-.prem-step{
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #999999;
 }
 
 .Premium-caption{
@@ -420,6 +417,7 @@ img{
     text-align: center;
     margin-left: 131px;
     margin-bottom: 25px;
+    margin-top: 0px;
 }
 
 .prem-text{
@@ -428,6 +426,14 @@ img{
     font-weight: 400;
     color: #888888;
     text-align: center;
+}
+
+.prem-step{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: -5px;
 }
 
 .premium-container{
@@ -440,7 +446,7 @@ img{
     height: 2px;
     background-color: #cce0e6;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 .legend-form-position{
@@ -472,6 +478,7 @@ img{
     padding-right: 20px;
     padding-left: 16px;
     outline: none;
+    font-size: 16px;
 }
 
 .input-form::placeholder{
@@ -510,6 +517,7 @@ img{
     background-color: #00a9e0;
     color: #ffffff;
     border-radius: 40px;
+    font-size: 16px;
 }
 
 .position-form-btn{
@@ -582,7 +590,7 @@ img{
 .add-person-block{
     position: relative;
     text-align: left;
-    top: -35px;
+    top: -27px;
 }
 
 .person-form-2,.person-form-3{
@@ -607,6 +615,7 @@ img{
 .add-person-input{
     width: 272px;
 }
+
 
 .remove-person-btn{
     width: 25px;
@@ -634,14 +643,15 @@ img{
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	padding-left: 25px;
+	padding-left: 26px;
 	margin-right: 0;
 	line-height: 18px;
-	user-select: none;
+    user-select: none;
+    font-size: 16px;
 }
 
 .radio-btn label:not(:last-child) {
-	margin-right: 29px;
+	margin-right: 32px;
 }
 
 .radio-btn label:before {
@@ -668,7 +678,7 @@ img{
 }
 
 .legend-radio{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .add-person-form{
@@ -706,6 +716,11 @@ img{
 
 .active-prem{
     display: block;
+}
+
+.legend-form-person{
+    font-size: 18px;
+    margin-bottom: 11px;
 }
 
 .modal {
@@ -785,6 +800,7 @@ img{
     background-color: #00a9e0;
     color: #ffffff;
     border-radius: 30px;
+    font-size: 16px;
 }
 
 .modal-text{
@@ -898,6 +914,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
+    left: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -911,6 +928,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
+    left: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -924,6 +942,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
+    left: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -937,6 +956,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
+    left: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -949,6 +969,7 @@ img{
     display: block;
     position: relative;
     top: -38px;
+    left: 3px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -957,6 +978,10 @@ img{
 
 .circle-line-off::after{
     width: 0px;
+}
+
+.choices {
+    margin-bottom: 48px;
 }
 
 .position-progress-bar{
@@ -1097,7 +1122,7 @@ img{
     }
 
     .header-section{
-        padding-top: 24px;
+        padding-top: 32px;
     }
 
     .logo{
@@ -1302,7 +1327,7 @@ img{
     .logo{
         width: 145px;
         margin-right: 60%;
-        margin-bottom: 50px;
+        margin-bottom: 48px;
     }
     
     .menu-list-item{
@@ -1319,7 +1344,8 @@ img{
 
     .header-caption{
         font-size: 48px;
-        line-height: 96px;
+        line-height: 48px;
+        margin-bottom: 25px;
     }
 
     .header-caption-position{
@@ -1511,7 +1537,7 @@ img{
     }
 
     .recomend-text{
-        font-size: 10px;
+        font-size: 1.54vw;
     }
 
     .modal-guts{
@@ -1526,7 +1552,7 @@ img{
     }
 
     .modal-btn{
-        margin-left: 23px;
+        margin-left: 0px;
     }
 
     .my-sale-text-green{
@@ -1556,8 +1582,8 @@ img{
     }
 
     .modal-three-step {
-        overflow: scroll;
-        height: 100%;
+        overflow-x: auto;
+        height: 400px;
     }
 
     .modal{
@@ -1681,6 +1707,18 @@ img{
     .qestion-section{
         padding-top: 62px;
         padding-bottom: 56px;
+    }
+
+    img{
+        width: 145px;
+    }
+
+    .ui-accordion-icons{
+        background-size: 16px;
+    }
+
+    .prem-outline{
+        width: 80px;
     }
     
 
