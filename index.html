@@ -8,6 +8,7 @@
     <meta name="description" content="Анализы в Москве, Подмосковье, в городах России"> 
     <title>CMD Центр Молекулярной Диагностики. Медицинская лаборатория 8 (800) 707 788 1 </title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,6 +18,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/iquery-ui.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/dayepicker.js"></script>
 </head>
 <body>
     <section class="header-section">
@@ -263,7 +266,7 @@
                     </div>
                     </div>
                     <div class="accordion">
-                    <h3 class="question-link d">Как использовать карту?</h3>
+                    <h3 class="question-link d">Как использовать&nbsp;карту?</h3>
                     <div class="question-list-item">
                         <p>При заказе услуг назовите администратору полученный в&nbsp;SMS номер карты, номер телефона, к&nbsp;которому привязана ваша карта, или ФИО владельца.</p>
                     </div>
@@ -279,7 +282,7 @@
                     </div>
                     </div>
                     <div class="accordion">
-                    <h3 class="question-link d">Я накопил 100&nbsp;000&nbsp;руб. Что дальше?</h3>
+                    <h3 class="question-link d">Я накопил 100&nbsp;000&nbsp;руб.&nbsp;Что дальше?</h3>
                     <div class="question-list-item">
                         <p>Для получения скидки 20% и&nbsp;подключения дополнительных участников заполните заявление в&nbsp;любом офисе CMD или на&nbsp;<a class="link-text" target="_blank" href="https://www.cmd-online.ru/patsientam/">сайте.</a></p>
                     </div>
@@ -299,7 +302,6 @@
                             collapsible: true
                         } );
                     });
-                    
                 </script>
             </section>
         </main>
@@ -317,7 +319,9 @@
                 </div>
             </section>
             <section class="footer-recomend recomend-text">
-                <!-- О возможных противопоказаниях необходимо проконсультироваться со&nbsp;специалистом -->
+                <div class="chesel-row">
+                    <div>О возможных противопоказаниях необходимо проконсультироваться со&nbsp;специалистом</div>
+                </div>
             </section>
         </footer>
         <div class="modal-overlay close" id="modal-overlay"></div>
@@ -326,19 +330,19 @@
             <p class="caption-modal">Узнать свою скидку</p>
             <div class="modal-guts">
             <div id="modalFirstStep" class="modal-first-step active-modal">
-                <p class="legend-form">Номер телефона</p>
-                <input value="+7" class="input-form input-phone-modal last-in phone" name="Номер телефона" type="text" placeholder="+7 (___) ___-__-__" required>
+                <p class="legend-form modal-legend legend-phone">Номер телефона</p>
+                <input value="+7" class="input-form input-phone-modal last-in phone firs-modal-phone" name="Номер телефона" type="text" placeholder="+7 (___) ___-__-__" required>
                 <button id="modalSubmit" class="btn modal-btn" type="submit">Продолжить</button>
             </div>
             <div id="modalSecondStep" class="modal-second-step disable-modal">
-                <p class="modal-text">На ваш телефон +7(111)&nbsp;222-33-44 отправлено сообщение с&nbsp;кодом. <br>Для подтверждения Вашего телефонного номера введите код из&nbsp;SMS.</p>
+                <p class="modal-text modal-legend">На ваш телефон +7(111)&nbsp;222-33-44 отправлено сообщение с&nbsp;кодом. <br>Для подтверждения Вашего телефонного номера введите код из&nbsp;SMS.</p>
                 <input class="input-form input-code-modal last-in" name="Код" type="text" required>
                 <span class="modal-text-return modal-text-return-mobile">Повторно отправить SMS можно через 20&nbsp;секунд</span>
                 <button id="confirm" class="btn modal-btn" type="submit">Подтвердить</button>
                 <span class="modal-text-return modal-text-return-des">Повторно отправить SMS можно через 20&nbsp;секунд</span>
             </div>
             <div id="modalThreeStep" class="modal-three-step disable-modal">
-                <p class="legend-form">Номер дисконтной карты</p>
+                <p class="legend-form modal-legend-discond">Номер дисконтной карты</p>
                 <select class="select-modal" name="select" id="selectCustom">
                     <option value="1">3000348872&nbsp;-&nbsp;0%</option>
                     <option value="1">3000348872&nbsp;-&nbsp;5%</option>
