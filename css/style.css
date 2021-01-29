@@ -29,6 +29,10 @@ img{
 	max-width: 100%;
 }
 
+input{
+    color: #000000;
+}
+
 .list-reset{
 	margin: 0;
 	padding: 0;
@@ -70,6 +74,10 @@ img{
 
 .hidden-caption{
     display: none;
+}
+
+.percent {
+    font-weight: 400;
 }
 
 /* Стили шапки */
@@ -1177,7 +1185,7 @@ img{
 
     .logo{
         margin-right: 103px;
-        margin-bottom: 143px;
+        margin-bottom: 152px;
     }
     
     .menu-list-item{
@@ -1244,7 +1252,7 @@ img{
 
     .logo{
         margin-right: 370px;
-        margin-bottom: 110px;
+        margin-bottom: 122px;
     }
     
     .menu-list-item{
@@ -1399,6 +1407,10 @@ img{
 
     .premium-form-btn{
         margin-top: 32px;
+    }
+
+    .ui-widget-content{
+        padding-left: 0px;
     }
 
     .logo{
