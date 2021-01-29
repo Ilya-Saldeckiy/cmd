@@ -1652,6 +1652,11 @@ img{
         padding-right: 10px;
     }
 
+    .modal{
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+
     .input-phone-modal{
         margin-bottom: 30px;
     }
